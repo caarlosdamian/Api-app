@@ -12,7 +12,7 @@ const TableData = () => {
     <div className="tableContainer">
       {data.length !== 0 ? (
         <div className="tableWrapper">
-          <h1 className="tableHeader">Topics Related to React</h1>
+          <h1 className="tableHeader">React Topics</h1>
           <table>
             <tbody>
               <tr>

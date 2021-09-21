@@ -7,7 +7,6 @@ const Card = (props) => {
   useEffect(() => {
     setdata(props.location.state.data);
   }, [props]);
-  console.log(data);
   return (
     <div className="cardContainer">
       <div className="wrapper">
@@ -28,7 +27,7 @@ const Card = (props) => {
           <span className="cardSpan">Related Topics</span>
           <div className="cardListContaner">
             {data?.relatedTopics?.map((topic) => (
-              <div className="itemContainer">
+              <div key={topic.id} className="itemContainer">
                 <span className="cardSpanItem">{topic.name}</span>{" "}
                 <div className="startCountContainer">
                   <span className="cardSpanItemCount">
