@@ -5,12 +5,12 @@ const Card = (props) => {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    setdata(props.location.state.data);
+    setdata(props?.location?.state.data);
   }, [props]);
   return (
     <div className="cardContainer">
       <div className="wrapper">
-        <h2 className="cardHeader">{data.name}</h2>
+        <h2 className="cardHeader">{data?.name}</h2>
         <img
           className="cardImg"
           src="https://s36496.pcdn.co/wp-content/uploads/2019/01/7_Github_contenido.jpg"
