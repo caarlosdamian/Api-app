@@ -10,7 +10,7 @@
   align-items: center;
   flex-direction: column;
   width: 800px;
-  background-color: #bc4558;
+  background-color: #FFB344;
   height: 500px;
   width: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -22,7 +22,7 @@
 }
 .cardHeader {
   font-size: 30px;
-  color: white;
+  color: #FFF8E5;
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 20px;

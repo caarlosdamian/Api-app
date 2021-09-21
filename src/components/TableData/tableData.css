@@ -13,18 +13,18 @@
   font-size: 35px;
   text-align: center;
   margin-bottom: 20px;
+  color: #fff8e5;
 }
 table {
   width: 100%;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  background-color: white;
 }
 
 th,
 td {
   text-align: left;
   padding: 10px;
-  border: 0.5px solid lightgray;
 }
 
 .tableName {
@@ -35,15 +35,15 @@ td {
   height: 20px;
   border-radius: 5px;
   border: none;
-  background-color: #ac0e28;
-  color: white;
+  background-color: #e05d5d;
+  color: #fff8e5;
   text-align: center;
   padding: 2px;
 }
 
 .tableButton:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 @media (max-width: 480px) {
