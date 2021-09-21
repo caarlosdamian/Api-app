@@ -10,7 +10,7 @@
   align-items: center;
   flex-direction: column;
   width: 800px;
-  background-color: rgb(101, 145, 204);
+  background-color: #bc4558;
   height: 500px;
   width: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -26,11 +26,12 @@
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 20px;
+  font-style: italic;
 }
 .cardImg {
-  width: 200px;
+  width: 180px;
   height: 150px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 .up {
@@ -42,9 +43,9 @@
   align-items: center;
   flex-direction: column;
 }
-
 .cardIcon {
   color: rgb(231, 231, 74);
+  margin-left: 5px;
 }
 .cardSpan {
   font-size: 20px;
@@ -55,16 +56,51 @@
 .cardSpanItem {
   margin-right: 5px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .itemContainer {
   display: flex;
   justify-content: space-between;
+}
+.startCountContainer {
+  display: flex;
+  justify-content: space-around;
 }
 .cardSpanItem {
   font-weight: 300;
   font-size: 18px;
   text-transform: capitalize;
 }
+.cardIconItem {
+  margin-left: 5px;
+  color: rgb(231, 231, 74);
+}
 .cardSpanItemCount {
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 250px;
+    height: 400px;
+  }
+  .cardHeader {
+    font-size: 25px;
+  }
+  .cardImg {
+    height: 70px;
+    width: 100px;
+  }
+  .up {
+    margin-bottom: 5px;
+  }
+  .cardIcon {
+    margin-left: 2px;
+  }
+  .cardSpan {
+    font-size: 18px;
+  }
+  .cardIconItem {
+    font-size: 16px;
+  }
 }

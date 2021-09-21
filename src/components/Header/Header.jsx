@@ -4,7 +4,7 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="container">
-      <Link to="/">
+      <Link to="/" className="headerLink">
         <h1 className="headerTitle">Github API</h1>
       </Link>
     </div>
