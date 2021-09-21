@@ -1,37 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./tableData.css";
+import { getData } from "../../api/getData";
 
 const TableData = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getData().then((res) => setData(res?.data?.topic?.relatedTopics));
+  }, []);
+  console.log(data);
   return (
     <div className="tableContainer">
-      <div className="wrapper">
+      <div className="tableWrapper">
+        <h1 className="tableHeader">Topics Related to React</h1>
         <table>
           <tbody>
             <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Points</th>
+              <th>ID</th>
+              <th>Name</th>
+              <th>StargazerCount</th>
+              <th>ViewMore</th>
             </tr>
-            <tr>
-              <td>Peter</td>
-              <td>Griffin</td>
-              <td>$100</td>
-            </tr>
-            <tr>
-              <td>Lois</td>
-              <td>Griffin</td>
-              <td>$150</td>
-            </tr>
-            <tr>
-              <td>Joe</td>
-              <td>Swanson</td>
-              <td>$300</td>
-            </tr>
-            <tr>
-              <td>Cleveland</td>
-              <td>Brown</td>
-              <td>$250</td>
-            </tr>
+
+            {data.map((topic) => (
+              <tr key={topic.id}>
+                <td>{topic.id}</td>
+                <td>{topic.name}</td>
+                <td>{topic.stargazerCount}</td>
+                <td><button className="tableButton">More</button></td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

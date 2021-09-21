@@ -1,5 +1,11 @@
 .container {
   height: 50px;
   width: 100vw;
-  background-color: aquamarine;
+  background-color: rgb(6, 6, 119);
+}
+.headerTitle{
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
