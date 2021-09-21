@@ -7,7 +7,6 @@ const TableData = () => {
   useEffect(() => {
     getData().then((res) => setData(res?.data?.topic?.relatedTopics));
   }, []);
-  console.log(data);
   return (
     <div className="tableContainer">
       <div className="tableWrapper">
