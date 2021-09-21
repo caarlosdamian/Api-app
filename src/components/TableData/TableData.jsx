@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./tableData.css";
 import { getData } from "../../api/getData";
+import { Link } from "react-router-dom";
 
 const TableData = () => {
   const [data, setData] = useState([]);
@@ -25,7 +26,16 @@ const TableData = () => {
                 <td>{topic.id}</td>
                 <td>{topic.name}</td>
                 <td>{topic.stargazerCount}</td>
-                <td><button className="tableButton">More</button></td>
+                <td>
+                  <Link
+                    to={{
+                      pathname: `/${topic.id}`,
+                      state: { data: topic },
+                    }}
+                  >
+                    <button className="tableButton">More</button>
+                  </Link>
+                </td>
               </tr>
             ))}
           </tbody>
