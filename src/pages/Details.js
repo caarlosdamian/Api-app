@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Card from "../components/molecules/Card/Card";
+import Card from "../components/Features/Card";
 import PropTypes from "prop-types";
 import { mobile } from "../responsive";
 

@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import { mobile } from "../../responsive";
+import { mobile } from "../../../responsive";
 
 export const Thead = styled.thead`
   font-weight: bold;
 `;
-export const TableRow = styled.tr`
+export const Row = styled.tr`
   height: 25px;
   ${mobile({ width: "150px", height: "50px" })}
 `;
-export const TableHeader = styled.th`
+export const Header = styled.th`
   color: #f13958;
   font-size: 25px;
   border: 1px solid lightgray;
@@ -21,8 +21,4 @@ export const TableData = styled.td`
   text-transform: ${(props) => (props.title ? "capitalize" : "")};
   ${mobile({ fontSize: "16px", margin: "0px 5px" })}
 `;
-export const StartContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+

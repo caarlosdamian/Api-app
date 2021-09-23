@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { List, ListItem } from "../../atoms/list";
-import { CardTitle } from "../../atoms/typograpy";
-import PropTypes from "prop-types";
+import { shape, string, number ,arrayOf } from "prop-types";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
-import { CardButton, CardButtonStar } from "../../atoms/button";
-import { Anchor } from "../../atoms/links";
+import {Anchor} from '../../Shared/Link';
+import Button from '../../Shared/Button';
+import List,{ ListItem } from '../../Shared/List';
+import Flex from '../../Shared/Flex';
+import Text from '../../Shared/Text';
 import { mobile } from "../../../responsive";
 
 const Container = styled.div`
@@ -26,41 +27,57 @@ const Container = styled.div`
   }
   ${mobile({ width: "70%", margin: "10px 0px" })}
 `;
-const NameContainer = styled.div`
-  display: flex;
-  align-items: center;
+
+export const Header = styled.span`
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 35px;
 `;
 
 const Card = ({ data }) => {
   return (
     <Container>
-      <NameContainer>
-        <CardTitle>{data?.name}</CardTitle>
-      </NameContainer>
-      <CardButtonStar>
+      <Flex alignItems="center" paddingBottom="20px" justifyContent="center">
+        <Text size="20px" color="black">{data.name}</Text>
+      </Flex>
+        
+      <Button>
         <StarBorderIcon style={{ color: "#e9d02c" }} />
-        {data?.stargazerCount}
-      </CardButtonStar>
+        {data.stargazerCount}
+      </Button>
+
       <List>
         <ListItem header>Related Topics</ListItem>
         {data.relatedTopics.map((item) => (
           <ListItem key={item.id}>{item.name}</ListItem>
         ))}
       </List>
-      <CardButton>
+
+      <Button>
         <Anchor
           href={`https://www.google.com/search?q=${data.name}`}
           target="_blank"
         >
           Learn More
         </Anchor>
-      </CardButton>
+      </Button>
+      
     </Container>
   );
 };
 
 Card.propTypes = {
-  data: PropTypes.object,
+  data: shape({
+    name: string.isRequired,
+    stargazerCount: string.isRequired,
+    relatedTopics: arrayOf(
+      shape({
+        id: number,
+        name: string
+      })
+    ).isRequired,
+
+  })
 };
 
 export default Card;

@@ -9,3 +9,5 @@ export const ListItem = styled.li`
   text-transform: ${(props) => (props.header ? "" : "capitalize")};
   margin: 20px 0px;
 `;
+
+export default List;
