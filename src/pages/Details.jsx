@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import Card from "../components/molecules/Card/Card";
 import PropTypes from "prop-types";
+import { mobile } from "../responsive";
 
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  position: relative;
+  margin-top: 100px;
+  align-items: center;
+  ${mobile({ flexDirection: "column", alignItems: "center", marginTop:"60px" })}
 `;
 
 const Details = ({ location }) => {
