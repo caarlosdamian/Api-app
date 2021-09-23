@@ -24,10 +24,11 @@ Please run the follow script in order to start the application on [http://localh
 ![Github Api](https://i.ibb.co/rvb3k46/Screen-Shot-2021-09-23-at-1-06-33.png)
 ##
 ![Github Api](https://i.ibb.co/NW7JX6X/Screen-Shot-2021-09-23-at-1-06-39.png)
-##
 
+## Mobile Desing
+![image](https://user-images.githubusercontent.com/6474358/134532967-4afcd274-9481-4a88-84ad-460b0dc27e5c.png)
 
-
+![Github Api](https://i.ibb.co/6NXvMDy/Screen-Shot-2021-09-23-at-10-04-41.png)
 
 ## Stay up to date with new projects
 
