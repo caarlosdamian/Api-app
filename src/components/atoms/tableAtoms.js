@@ -17,3 +17,8 @@ export const TableData = styled.td`
   text-align: center;
   text-transform: ${(props) => (props.title ? "capitalize" : "")};
 `;
+export const StartContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
