@@ -6,9 +6,9 @@ import { mobile } from "../responsive";
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
   align-items: center;
-  ${mobile({ flexDirection:"column",alignItems:"center"})}
+  ${mobile({ flexDirection: "column", alignItems: "center", marginTop:"60px" })}
 `;
 
 const Details = ({ location }) => {

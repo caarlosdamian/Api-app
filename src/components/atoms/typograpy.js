@@ -16,3 +16,8 @@ export const CardTitle = styled.span`
   text-transform: capitalize;
   font-size: 35px;
 `;
+export const Mode = styled.span`
+  font-weight: 300;
+  font-size: 18px;
+  margin-right: 10px;
+`;
