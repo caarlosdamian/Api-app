@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 export const Button = styled.button`
   width: 100px;
@@ -13,6 +14,12 @@ export const Button = styled.button`
   &:hover {
     opacity: 0.9;
   }
+  ${mobile({
+    padding: "10px 5px",
+    width: "70px",
+    fontSize: "16px",
+    margin: "0px 5px",
+  })}
 `;
 
 export const CardButton = styled.button`

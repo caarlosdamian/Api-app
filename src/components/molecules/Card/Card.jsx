@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import { CardButton, CardButtonStar } from "../../atoms/button";
 import { Anchor } from "../../atoms/links";
+import { mobile } from "../../../responsive";
 
 const Container = styled.div`
   padding: 20px;
@@ -22,6 +23,7 @@ const Container = styled.div`
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
+  ${mobile({ width: "70%", margin: "10px 0px" })}
 `;
 const NameContainer = styled.div`
   display: flex;
@@ -29,7 +31,6 @@ const NameContainer = styled.div`
 `;
 
 const Card = ({ data }) => {
-  console.log(data.relatedTopics);
   return (
     <Container>
       <NameContainer>

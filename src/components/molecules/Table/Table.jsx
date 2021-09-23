@@ -11,13 +11,14 @@ import {
   TableData,
   StartContainer,
 } from "../../atoms/tableAtoms";
+import { mobile } from "../../../responsive";
 
 const TableStyled = styled.table`
   width: 50%;
+  ${mobile({ width: "100%" })}
 `;
 
 const Table = ({ data }) => {
-  console.log(data);
   return (
     <TableStyled>
       <Thead>
@@ -29,7 +30,7 @@ const Table = ({ data }) => {
 
         {data.map((item) => (
           <TableRow key={item.id}>
-            <TableData title>{item.name}</TableData>
+            <TableData title="true">{item.name}</TableData>
             <TableData>
               <StartContainer>
                 <StarBorderIcon style={{ color: "#e9d02c" }} />

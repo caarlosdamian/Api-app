@@ -4,11 +4,11 @@ import { Header } from "../components/atoms/typograpy";
 import Table from "../components/molecules/Table/Table";
 import { getData } from "../api/getData";
 import { LinearProgress } from "@material-ui/core";
+import {mobile} from '../responsive'
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  position: relative;
   overflow: hidden;
 `;
 const Wrapper = styled.div`
@@ -30,6 +30,7 @@ const InfoContainer = styled.div`
   padding: 50px;
   height: 500px;
   width: 100%;
+  ${mobile({ padding:"10px" })}
 `;
 const Home = () => {
   const [data, setData] = useState([]);
