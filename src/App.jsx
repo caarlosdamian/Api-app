@@ -1,18 +1,17 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import TableData from "./components/TableData/TableData";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Card from "./components/Card/Card";
-
+import Navbar from "./components/molecules/NavBar/Navbar";
+import { routes } from "./routes/routes";
 function App() {
+  const routeComponents = routes.map(({ path, component }, key) => (
+    <Route exact path={path} component={component} key={key} />
+  ));
+
   return (
-    <div className="App">
+    <div>
       <Router>
-        <Header />
-        <Switch>
-          <Route path="/" exact component={TableData} />
-          <Route path="/:id" exact component={Card} />
-        </Switch>
+        <Navbar />
+        <Switch>{routeComponents}</Switch>
       </Router>
     </div>
   );
