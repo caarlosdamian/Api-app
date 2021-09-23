@@ -9,4 +9,7 @@ export const routes = [
     path: "/details/:id",
     component: Details,
   },
+  {
+    component: Home,
+  },
 ];

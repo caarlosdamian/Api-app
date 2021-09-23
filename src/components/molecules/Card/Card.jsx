@@ -35,11 +35,11 @@ const Card = ({ data }) => {
   return (
     <Container>
       <NameContainer>
-        <CardTitle>{data.name}</CardTitle>
+        <CardTitle>{data?.name}</CardTitle>
       </NameContainer>
       <CardButtonStar>
         <StarBorderIcon style={{ color: "#e9d02c" }} />
-        {data.stargazerCount}
+        {data?.stargazerCount}
       </CardButtonStar>
       <List>
         <ListItem header>Related Topics</ListItem>
