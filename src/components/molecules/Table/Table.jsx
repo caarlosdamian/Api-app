@@ -39,7 +39,7 @@ const Table = ({ data }) => {
             <TableData>
               <Links
                 to={{
-                  pathname: `/${item.id}`,
+                  pathname: `/details/${item.name}`,
                   state: { data: item },
                 }}
               >
