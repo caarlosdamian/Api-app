@@ -21,13 +21,11 @@ Please run the follow script in order to start the application on [http://localh
 #### `npm start` or `yarn start` 
 
 ## Application
-![Github Api](https://i.ibb.co/5TxQBxb/Screen-Shot-2021-09-21-at-17-59-43.png)
-![Github Api](https://i.ibb.co/Zz7k4M9/Screen-Shot-2021-09-21-at-17-59-50.png)
+![Github Api](https://i.ibb.co/rvb3k46/Screen-Shot-2021-09-23-at-1-06-33.png)
+##
+![Github Api](https://i.ibb.co/NW7JX6X/Screen-Shot-2021-09-23-at-1-06-39.png)
+##
 
-## Mobile Desing
-
-![Github Api](https://i.ibb.co/YXQK0K4/Screen-Shot-2021-09-21-at-18-03-00.png)
-![Github Api](https://i.ibb.co/qgMsRFf/Screen-Shot-2021-09-21-at-18-03-12.png)
 
 
 
