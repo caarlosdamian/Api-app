@@ -1,4 +1,10 @@
 # React Topics App
+:warning: It is necessary to have Github api token please generate it [Here](https://github.com/settings/tokens) :warning:
+
+Then post it on .env file you will see the below message 
+
+#### `REACT_APP_API_KEY=PASTE_TOKEN_HERE`
+
 ## Introduction
 Build an Application using Github data. 
 
