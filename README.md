@@ -1,5 +1,5 @@
 # React Topics App
-:warning: It is necessary to have Github api token please generate it [Here](https://github.com/settings/tokens) :warning:
+:IMPORTANT - warning: It is necessary to have Github api token please generate it [Here](https://github.com/settings/tokens) :warning:
 
 Then post it on .env file you will see the below message 
 
