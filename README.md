@@ -20,7 +20,6 @@ Use the package manager [yarn](https://classic.yarnpkg.com/en/docs/install/#wind
 
 #### `npm install` or `yarn install`
 
-
 ## Usage
 Please run the follow script in order to start the application on [http://localhost:3000/](http://localhost:3000/)🚀
 
