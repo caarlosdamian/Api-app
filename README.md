@@ -12,7 +12,7 @@ Techniques used:
 
 - Advanced React Best Practices such as folder & file structure, hooks.
 - Creating a User Interface using pure Css
-- Working with GraphQl Apis
+- Working with GraphQl Api
 
 ## Installation
 
